@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="A webpage about me and my interests">
+    <title>About Me</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>About Me</h1>
+    </header>
+
+    <section>
+        <h2>Introduction</h2>
+
+        <p>
+            My name is [Your Name]. This is my webpage for my HTML exercise.
+            I am learning how to create and style websites.
+        </p>
