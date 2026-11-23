@@ -82,6 +82,10 @@ registerButtons.forEach(function(button) {
         registrationMessage.textContent =
             "You selected " + programs[selectedProgram].title + ".";
 
+        document.getElementById("registration").scrollIntoView({
+            behavior: "smooth"
+        });
+
     });
 
 });
@@ -107,5 +111,29 @@ infoButton.addEventListener("click", function() {
         infoButton.setAttribute("aria-expanded", "false");
 
     }
+
+});
+
+
+// EXERCISE 12: REGISTRATION FORM SUBMISSION
+
+const registrationForm = document.getElementById("registration-form");
+
+registrationForm.addEventListener("submit", function(event) {
+
+    // Prevent the browser from submitting or reloading the page
+    event.preventDefault();
+
+    // Get the information entered by the user
+    const name = document.getElementById("name").value;
+    const selectedProgram = programSelect.value;
+
+    // Find the program title
+    const program = programs[selectedProgram];
+
+    // Display a confirmation message on the page
+    registrationMessage.textContent =
+        "Thanks, " + name + "! You've requested a spot in the " +
+        program.title + ".";
 
 });
