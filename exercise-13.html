@@ -3,39 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Community Library Programs</title>
+    <meta name="description" content="Explore community library programs and learn more about upcoming events.">
+
+    <title>Library Programs | Community Library</title>
+
     <link rel="stylesheet" href="exercise09.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
     <script src="script.js" defer></script>
 </head>
 
 <body>
 
-    <header>
-        <h1>Community Library Programs</h1>
-        <p>Explore programs, learn something new, and connect with your community.</p>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
 
-        <nav>
-            <a href="#programs">Programs</a>
-            <a href="#details">Program Details</a>
-            <a href="#registration">Registration</a>
-            <a href="#information">Additional Information</a>
-        </nav>
+    <header id="main-header">
+        <div class="header-content">
+            <p class="eyebrow">YOUR COMMUNITY LIBRARY</p>
+
+            <h1 id="main-heading">Discover, Learn, Connect</h1>
+
+            <p class="header-description">
+                Explore upcoming programs, meet your community, and learn something new.
+            </p>
+
+            <nav aria-label="Main navigation">
+                <ul class="navigation">
+                    <li><a href="#programs">Programs</a></li>
+                    <li><a href="#program-details">Program Details</a></li>
+                    <li><a href="#registration">Registration</a></li>
+                    <li><a href="#information">Learn More</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <main>
+    <main id="main-content" class="page-container">
 
-        <section id="programs">
-            <h2>Upcoming Library Programs</h2>
-            <p>Explore our available programs and find something that interests you.</p>
+        <section id="programs" class="content-box">
+
+            <p class="eyebrow">WHAT'S HAPPENING</p>
+
+            <h2>Welcome to Our Community Library</h2>
+
+            <p class="section-intro">
+                Our library offers opportunities for everyone to learn,
+                explore new interests, and connect with the community.
+            </p>
+
+            <h2>Explore Our Programs</h2>
+
+            <p>
+                Select a program below to learn more about what we offer.
+            </p>
 
             <table>
-                <caption>Available Library Programs</caption>
+                <caption>Available Community Library Programs</caption>
+
                 <thead>
                     <tr>
-                        <th>Program</th>
-                        <th>Audience</th>
-                        <th>Description</th>
-                        <th>Actions</th>
+                        <th scope="col">Program</th>
+                        <th scope="col">Audience</th>
+                        <th scope="col">Action</th>
                     </tr>
                 </thead>
 
@@ -43,124 +75,218 @@
                     <tr>
                         <td>Community Book Club</td>
                         <td>Adults</td>
-                        <td>Discuss books and share ideas with other readers.</td>
                         <td>
-                            <button type="button" class="details-button" data-program="book-club">View Details</button>
-                            <button type="button" class="register-button" data-program="book-club">Register</button>
+                            <button type="button" class="details-button"
+                                data-program="book-club">
+                                View Details
+                            </button>
+
+                            <button type="button" class="register-button"
+                                data-program="book-club">
+                                Register
+                            </button>
                         </td>
                     </tr>
 
                     <tr>
                         <td>Family Story Time</td>
-                        <td>Children and families</td>
-                        <td>Enjoy stories and activities together.</td>
+                        <td>Children and Families</td>
                         <td>
-                            <button type="button" class="details-button" data-program="story-time">View Details</button>
-                            <button type="button" class="register-button" data-program="story-time">Register</button>
+                            <button type="button" class="details-button"
+                                data-program="story-time">
+                                View Details
+                            </button>
+
+                            <button type="button" class="register-button"
+                                data-program="story-time">
+                                Register
+                            </button>
                         </td>
                     </tr>
 
                     <tr>
                         <td>Genealogy Workshop</td>
-                        <td>Adults and seniors</td>
-                        <td>Learn how to research your family history.</td>
+                        <td>Adults and Seniors</td>
                         <td>
-                            <button type="button" class="details-button" data-program="genealogy">View Details</button>
-                            <button type="button" class="register-button" data-program="genealogy">Register</button>
+                            <button type="button" class="details-button"
+                                data-program="genealogy">
+                                View Details
+                            </button>
+
+                            <button type="button" class="register-button"
+                                data-program="genealogy">
+                                Register
+                            </button>
                         </td>
                     </tr>
 
                     <tr>
                         <td>Introduction to 3D Printing</td>
-                        <td>Teens and adults</td>
-                        <td>Explore the basics of 3D printing technology.</td>
+                        <td>Teens and Adults</td>
                         <td>
-                            <button type="button" class="details-button" data-program="printing">View Details</button>
-                            <button type="button" class="register-button" data-program="printing">Register</button>
+                            <button type="button" class="details-button"
+                                data-program="printing">
+                                View Details
+                            </button>
+
+                            <button type="button" class="register-button"
+                                data-program="printing">
+                                Register
+                            </button>
                         </td>
                     </tr>
 
                     <tr>
                         <td>Local History Talk</td>
-                        <td>All ages</td>
-                        <td>Learn more about the history of the local community.</td>
+                        <td>All Ages</td>
                         <td>
-                            <button type="button" class="details-button" data-program="history">View Details</button>
-                            <button type="button" class="register-button" data-program="history">Register</button>
+                            <button type="button" class="details-button"
+                                data-program="history">
+                                View Details
+                            </button>
+
+                            <button type="button" class="register-button"
+                                data-program="history">
+                                Register
+                            </button>
                         </td>
                     </tr>
                 </tbody>
             </table>
+
         </section>
 
-        <section id="details">
+        <!-- PROGRAM DETAILS SECTION -->
+
+        <section id="program-details" class="content-box">
+
+            <p class="eyebrow">LEARN MORE</p>
+
             <h2>Program Details</h2>
-            <p id="program-title">Select "View Details" to learn more about a program.</p>
-            <p id="program-description">Program information will appear here.</p>
-            <p><strong>Who can attend:</strong> <span id="program-audience">Not selected</span></p>
-            <p><strong>What to bring:</strong> <span id="program-bring">Not selected</span></p>
+
+            <p>
+                Select a "View Details" button above to learn more about a program.
+            </p>
+
+            <h3 id="program-title">Choose a Program</h3>
+
+            <p id="program-description">
+                Program information will appear here when you select a program.
+            </p>
+
+            <p id="program-audience"></p>
+
+            <p id="program-bring"></p>
+
         </section>
 
-        <section id="registration">
-            <h2>Register for a Program</h2>
-            <p>Complete the form below to request a spot in one of our programs.</p>
+        <!-- REGISTRATION SECTION -->
+
+        <section id="registration" class="content-box">
+
+            <p class="eyebrow">GET INVOLVED</p>
+
+            <h2>Program Registration</h2>
+
+            <p>
+                Complete the form below to request a spot in one of our library programs.
+                Fields marked with an asterisk (*) are required.
+            </p>
 
             <form id="registration-form">
 
-                <label for="name">Full Name:</label>
-                <input type="text" id="name" name="name" required>
+                <p>
+                    <label for="name">Full Name *</label>
+                    <input type="text" id="name" name="name"
+                        autocomplete="name" required>
+                </p>
 
-                <label for="email">Email Address:</label>
-                <input type="email" id="email" name="email" required>
+                <p>
+                    <label for="email">Email Address *</label>
+                    <input type="email" id="email" name="email"
+                        autocomplete="email" required>
+                </p>
 
-                <label for="program-select">Choose a Program:</label>
-                <select id="program-select" name="program" required>
-                    <option value="">Select a program</option>
-                    <option value="book-club">Community Book Club</option>
-                    <option value="story-time">Family Story Time</option>
-                    <option value="genealogy">Genealogy Workshop</option>
-                    <option value="printing">Introduction to 3D Printing</option>
-                    <option value="history">Local History Talk</option>
-                </select>
+                <p>
+                    <label for="program-select">Choose a Program *</label>
+
+                    <select id="program-select" name="program" required>
+                        <option value="">Select a program</option>
+                        <option value="book-club">Community Book Club</option>
+                        <option value="story-time">Family Story Time</option>
+                        <option value="genealogy">Genealogy Workshop</option>
+                        <option value="printing">Introduction to 3D Printing</option>
+                        <option value="history">Local History Talk</option>
+                    </select>
+                </p>
 
                 <fieldset>
-                    <legend>How would you like to attend?</legend>
+                    <legend>How would you like to attend? *</legend>
 
-                    <label>
-                        <input type="radio" name="attendance" value="in person" required>
-                        In person
-                    </label>
+                    <p>
+                        <input type="radio" id="in-person"
+                            name="attendance" value="in person" required>
+                        <label for="in-person">In person</label>
+                    </p>
 
-                    <label>
-                        <input type="radio" name="attendance" value="online">
-                        Online
-                    </label>
+                    <p>
+                        <input type="radio" id="online"
+                            name="attendance" value="online">
+                        <label for="online">Online</label>
+                    </p>
                 </fieldset>
 
                 <button type="submit">Submit Registration</button>
+
             </form>
 
-            <p id="registration-message" aria-live="polite"></p>
+            <p id="registration-message" aria-live="polite">
+                Your confirmation message will appear here after you submit the form.
+            </p>
+
         </section>
 
-        <section id="information">
-            <h2>Additional Information</h2>
-            <p>Would you like to learn more about our library programs?</p>
+        <!-- ADDITIONAL INFORMATION SECTION -->
 
-            <button type="button" id="info-button" aria-expanded="false" aria-controls="extra-info">
-                Show Additional Information
+        <section id="information" class="content-box">
+
+            <p class="eyebrow">WE'RE HERE TO HELP</p>
+
+            <h2>Additional Information</h2>
+
+            <p>
+                Have questions about our programs?
+                Contact us at library@example.com.
+            </p>
+
+            <button type="button" id="info-button"
+                aria-expanded="false" aria-controls="extra-info">
+                Show Program Information
             </button>
 
             <div id="extra-info" hidden>
-                <p>Our library programs provide opportunities for community members to learn new skills, explore interests, and connect with others. Contact the library if you have questions about program availability or accommodations.</p>
+
+                <h3>Why Join Our Programs?</h3>
+
+                <p>
+                    Library programs are a great way to meet new people,
+                    develop new skills, and discover something interesting.
+                    There are activities for children, teens, adults, and families.
+                </p>
+
+                <p>
+                    Everyone is welcome! We look forward to seeing you
+                    at our next community event.
+                </p>
+
             </div>
+
         </section>
 
     </main>
 
-    <footer>
-        <p>Community Library Programs</p>
-        <p>Connecting our community through learning and discovery.</p>
+    <footer class="site-footer">
+        <p>&copy; 2026 Community Library. Learn something new every day.</p>
     </footer>
 
 </body>
